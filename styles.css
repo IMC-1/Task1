@@ -9,8 +9,8 @@
 
 /* Styling for the body (global styles) */
 body {
-  font-family: Arial, sans-serif; /* Sets the font style for text */
-  background-color: #f4f4f4; /* Light gray background color */
+  font-family: Arial Black, sans-serif; /* Sets the font style for text */
+  background-color: #e7d8d5; /* Light gray background color */
   color: #333; /* Dark gray text color */
   padding: 20px; /* Adds spacing around the body */
 }
@@ -18,7 +18,7 @@ body {
 /* Header styles */
 header {
   text-align: center; /* Centers text in the header */
-  background-color: #4caf50; /* Green background */
+  background-color: #dda79b; /* Green background */
   color: white; /* White text */
   padding: 20px; /* Spacing inside the header */
 }
@@ -61,7 +61,7 @@ header h1 {
 }
 
 .portfolio a {
-  color: #4caf50; /* Green link color */
+  color: #743636; /* Green link color */
   text-decoration: none; /* Removes underline from links */
 }
 
@@ -76,7 +76,7 @@ footer {
 }
 
 footer a {
-  color: #4caf50; /* Green link color */
+  color: #622a44; /* Green link color */
 }
 
 /* Responsive Design */
