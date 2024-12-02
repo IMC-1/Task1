@@ -1,84 +1,63 @@
 <!DOCTYPE html>
-<!-- Declares the document is HTML5 -->
 <html lang="en">
-  <!-- Specifies the language of the document as English -->
-  <head>
-    <!-- Head section contains metadata and links to styles or scripts -->
-    <meta charset="UTF-8" />
-    <!-- Sets the character encoding to UTF-8 for supporting various characters -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Ensures the page scales correctly on all device sizes -->
-    <title>Personal Profile</title>
-    <!-- Title of the webpage, displayed on the browser tab -->
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Links an external CSS file to style the page -->
-  </head>
-  <body>
-    <!-- The main content of the webpage starts here -->
-
-    <!-- Header Section -->
-    <!-- Contains the main title and a brief description -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <header>
-      <h1>SALMA MSAHLI</h1>
-      <!-- Main heading, usually a name or site title -->
-      <p>ISAMM COMPUTER SCIENCE STUDENT | IMC MEMBER </p>
-      <!-- Short tagline or description -->
-      <h2>Showcasing Creativity, Skill, and Impact</h2>
+        <div class="container">
+            <h1>Salma Msahli</h1>
+            <p>Web Developer| Coder | Brand owner | Social media manager </p>
+        </div>
     </header>
 
-    <!-- Bio Section -->
-     <h2>Passionate about crafting solutions and bringing ideas to life—exploring creativity, technology, and impact</h2>
-    <!-- Provides a brief personal introduction -->
-    
-    <section class="bio">
-      <!-- Displays a profile picture -->
-      <img src="salmamsahlii.webp" alt="salma's profile picture" />
-      <!-- Paragraph describing the person -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-      <p>Hi, I’m a computer science student from Tunisia,
-      passionate about exploring different fields like programming, marketing, and branding.
-      I’m a member of ORENDA, where I work on building hard and soft skills to expand my opportunities.
-      I also run ASTREE, a brand for high-quality, stylish Brazilian bracelets.
-      Through this journey, I’m learning how to overcome challenges like boosting engagement and increasing sales while creating a strong brand identity.
-      I’m always eager to grow, explore new ideas, and find the most efficient and professional approaches to my work</p>
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Hi! I'm salma msahli,a computer science student in isamm. 
+          I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️ 
+          i am working on classics like c++, c and python.
+          Whenever possible, I also apply my passion for developing new projects
 
+        </p>
     </section>
-
-    <!-- Skills Section -->
-    <!-- Lists the individual's skills -->
-    <section class="skills">
+    <section id="sec">
       <h2>Skills</h2>
-      <!-- Heading level 2 for section titles -->
-      <ul>
-        <!-- Unordered list for displaying skills -->
-        <li>HTML</li>
-        <!-- Each skill is a list item -->
-        <li>CSS</li>
-        <li>c++</li>
-        <li>c</li>
-      </ul>
+      <DIV id="a1"><h1>C</h1></DIV>
+      <DIV id="a2"><H1>C++</H1></DIV>
+      <DIV id="a3"><h1>Python</h1></DIV>
+    </section>
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>A brief description of your project. <a href="#">View project</a></p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>A brief description of your project. <a href="#">View project</a></p>
+        </div>
+        <div class="project">
+            <h3>Project 3</h3>
+            <p>A brief description of your project. <a href="#">View project</a></p>
+        </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <!-- Links to example projects -->
-    <section class="portfolio">
-      <h2>Portfolio</h2>
-      <a href="#" target="_blank">Project 1</a>
-      <!-- Hyperlink for Project 1, opens in a new tab -->
-      |
-      <a href="#" target="_blank">Project 2</a>
-      <!-- Hyperlink for Project 2 -->
-      |
-      <a href="#" target="_blank">Project 3</a>
-      <!-- Hyperlink for Project 3 -->
-    </section>
+    
 
-    <!-- Footer Section -->
-    <!-- Contains contact information -->
     <footer>
-      <p>
-        Contact me: <a href="msahlisalma11@gmail.com">msahlisalma11@gmail.com</a>
-        <!-- Email link -->
-      </p>
+        <h2>Contact</h2>
+        <centre><p id="abc">Feel free to reach out to me via email: <a href="msahlisalma11@gmail.com">msahlisalma11@gmail.com</a></p></centre>
     </footer>
-  </body>
+</body>
+</html>
