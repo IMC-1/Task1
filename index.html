@@ -1,63 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Salma Msahli</h1>
-            <p>Web Developer| Coder | Brand owner | Social media manager </p>
-        </div>
-    </header>
-
+  <header>
     <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="contact" >Work Together</a></li>
+      </ul>
     </nav>
+  </header>
+  
+  <section id="home" class="section home">
+    <div class="intro">
+      <h1>Hi, I am a Web Developer</h1>
+      <p>I build things for the web.</p>
+    </div>
+    <div class="photo">
+      <img src="salmamsahlii.jpeg" alt="Web Developer">
+    </div>
+  </section>
 
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>Hi! I'm salma msahli,a computer science student in isamm. 
-          I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️ 
-          i am working on classics like c++, c and python.
-          Whenever possible, I also apply my passion for developing new projects
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>I am a passionate web developer with a knack for creating clean, functional, and visually appealing websites.</p>
+  </section>
 
-        </p>
-    </section>
-    <section id="sec">
-      <h2>Skills</h2>
-      <DIV id="a1"><h1>C</h1></DIV>
-      <DIV id="a2"><H1>C++</H1></DIV>
-      <DIV id="a3"><h1>Python</h1></DIV>
-    </section>
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>A brief description of your project. <a href="#">View project</a></p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>A brief description of your project. <a href="#">View project</a></p>
-        </div>
-        <div class="project">
-            <h3>Project 3</h3>
-            <p>A brief description of your project. <a href="#">View project</a></p>
-        </div>
-    </section>
+  <section id="skills" class="section skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill"><i class="icon-html5"></i> HTML</div>
+      <div class="skill"><i class="icon-css3"></i> CSS</div>
+      <div class="skill"><i class="icon-javascript"></i> JavaScript</div>
+      <div class="skill"><i class="icon-react"></i> React</div>
+    </div>
+  </section>
 
-    
+  <section id="projects" class="section projects">
+    <h2>Projects</h2>
+    <div class="project-container">
+      <a href="project1.html" class="project">Project 1</a>
+      <a href="project2.html" class="project">Project 2</a>
+      <a href="project3.html" class="project">Project 3</a>
+    </div>
+  </section>
 
-    <footer>
-        <h2>Contact</h2>
-        <centre><p id="abc">Feel free to reach out to me via email: <a href="msahlisalma11@gmail.com">msahlisalma11@gmail.com</a></p></centre>
-    </footer>
+  <footer id="contact" class="footer">
+    <h2>Work Together</h2>
+    <p>Feel free to reach out to collaborate or just say hi!</p>
+    <h2><a  class ="email" href="msahlisalma11@gmail.com">Email Me</a></h2>
+  </footer>
 </body>
 </html>
