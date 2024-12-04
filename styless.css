@@ -45,7 +45,6 @@ li, a, button {
   
 }
 
-
 .contact {
   
   background-color: #ff6f61; 
@@ -55,7 +54,7 @@ li, a, button {
   transition: all 0.3s ease:0s; 
 
 
-.contact:hover {
+.contact :hover {
   background-color: #343e43;!important
   color: #333; !important*
 }
