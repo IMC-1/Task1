@@ -52,7 +52,7 @@ li, a, button {
   padding: 12px 30px; 
   border-radius: 10px; 
   transition: all 0.3s ease:0s; 
-
+}
 
 .contact :hover {
   background-color: #343e43;!important
@@ -63,7 +63,7 @@ li, a, button {
   border: white solid 2px; 
   border-radius: 15%; 
   padding: 10px;
-
+}
 .section {
   padding: 2rem;
   text-align: center;
