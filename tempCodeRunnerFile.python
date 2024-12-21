@@ -1,0 +1,23 @@
+import numpy as np 
+import matplotlib.pyplot as plt
+
+def x(t):
+    return np.sin(2*5*np.pi*t) 
+
+Durée = 1
+Te = 0.2 
+N = int(Durée/Te) + 1
+
+te = np.linspace(0, Durée, N)  
+t = np.linspace(0, Durée, 10000)  
+
+x_e = x(te)  
+
+plt.scatter(te, x_e, color='orange', label="Signal échantillonné") 
+plt.plot(t, x(t), '--', label="Signal réel") 
+plt.grid() 
+plt.xlabel(r"$t$ (s)") 
+plt.ylabel(r"$x(t)$") 
+plt.title(r"exemple.wav") 
+plt.legend() 
+plt.show()

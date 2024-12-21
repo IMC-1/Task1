@@ -4,46 +4,160 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+  <!-- Link to CSS -->
   <link rel="stylesheet" href="styless.css">
+  <link rel="stylesheet" href="navbar.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+
 </head>
 <body>
-  <header>
-    <nav>
-      <ul class="navbar">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact" class="contact" >Work Together</a></li>
-      </ul>
-    </nav>
-  </header>
   
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <span>portfolio.</span>
+        </div>
+        <nav>
+          <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" >contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="btn-primary">Work Together</button>
+
+
+        <div class="nav-menu-bar" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <div class="side-menu main-content" id="sideMenu">
+        <div class="menu-header">
+
+            <span class="logo">portfolio.</span>
+            <button class="close-btn" onclick="toggleMenu()">X</button>
+        </div>
+        <ul class="navbar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact" >contact</a></li>
+        </ul>
+
+        <button class="btn-primary">Work Together</button>
+
+      </div>
+      <div class="nav-overlay" id="navOverlay" id="mainContent" onclick="toggleMenu()"></div>
+    </div>
+  </header>
+
+  
+  <script>
+    function toggleMenu(){
+      const sideMenu = document.getElementById('sideMenu');
+      const overlay = document.getElementById('navOverlay');
+      const mainContent = document.getElementById('mainContent');
+
+      const isOpen = sideMenu.classList.toggle('open');
+      if(isOpen){
+        overlay.style.display='block';
+        mainContent.classList.add('blurred');
+
+      }else{
+        overlay.style.display='none';
+        mainContent.classList.remove('blurred');
+      }
+    }
+  </script>
+
+ 
+  <!-- Home Section -->
   <section id="home" class="section home">
     <div class="intro">
-      <h1>Hi, I am a Web Developer</h1>
-      <p>I build things for the web.</p>
+      <h1 class="intro">Hi, I am <span>Salma Msahli</span></h1>
+      <h2>Web Developer</h2>
+      <p>taw nektebha ba3d ken tfakart</p>
+
+      
+      <div class="social-media"> 
+        <h3 class="follow-me">Follow Me</h3>
+        <div class="icons">
+
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-github-square"></i>
+        <i class="fab fa-linkedin"></i>
+
+        </div>
+      
+      </div>
+      <div class="buttons">
+        <a href="" class="btn-primary">Book Meeting</a>
+        <button class="explore-btn"><i class="fa fa-arrow-up">Downlode CV</i></button>
+
+      </div>
     </div>
     <div class="photo">
       <img src="salmamsahlii.jpeg" alt="Web Developer">
     </div>
   </section>
 
+  <!-- About Section -->
   <section id="about" class="section about">
     <h2>About Me</h2>
-    <p>I am a passionate web developer with a knack for creating clean, functional, and visually appealing websites.</p>
+    <p>
+     borjoulia be5la tawa bech nekteb taw ki yebda 3andi wsa3 bel nekteb haja behia ^^ <3<3
+    </p>
   </section>
 
+  <!-- Skills Section -->
   <section id="skills" class="section skills">
     <h2>My Skills</h2>
     <div class="skills-container">
-      <div class="skill"><i class="icon-html5"></i> HTML</div>
-      <div class="skill"><i class="icon-css3"></i> CSS</div>
-      <div class="skill"><i class="icon-javascript"></i> JavaScript</div>
-      <div class="skill"><i class="icon-react"></i> React</div>
+      <div class="skill" >
+        <i calss="fab fa-html5"> </i>HTML
+        </div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
     </div>
   </section>
 
+  <!-- Certifications Section -->
+  <section id="certifications" class="section certifications">
+    <h2>My Certifications</h2>
+    <div class="certifications-container">
+      <div class="certification-block">
+        <img src="mar.png" alt="Social Media Marketing Certification">
+        <div class="description">
+          <h3>Social Media Marketing</h3>
+          <p>Completed a course on Social Media Marketing from Great Learning.</p>
+          <a href="https://olympus.mygreatlearning.com/courses/62871/certificate" target="_blank">View Certification</a>
+        </div>
+      </div>
+      <div class="certification-block">
+        <img src="bigdata.png" alt="Big Data 101 Certification">
+        <div class="description">
+          <h3>101 Big Data</h3>
+          <p>Completed an introductory course on Big Data concepts.</p>
+          <a href="https://courses.cognitiveclass.ai/certificates/b1a89dae17c143e6ac54340f4e0b72ff" target="_blank">View Certification</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
   <section id="projects" class="section projects">
     <h2>Projects</h2>
     <div class="project-container">
@@ -53,10 +167,23 @@
     </div>
   </section>
 
-  <footer id="contact" class="footer">
-    <h2>Work Together</h2>
-    <p>Feel free to reach out to collaborate or just say hi!</p>
-    <h2><a class="email" href="mailto:msahlisalma11@gmail.com">Email Me</a></h2>
-  </footer>
+  <!-- Contact Me Section -->
+  <section id="contact">
+  <h2>Contact Me</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  <p id="statusMessage"></p>
+  </section>
+  <script src="myjavascriptproject.js"></script>
 </body>
 </html>
